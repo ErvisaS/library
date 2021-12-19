@@ -1,5 +1,5 @@
 const mongoose =require('mongoose')
-var Schema = mongoose.Schema;
+
 
 
 
@@ -10,10 +10,8 @@ mongoose.connect(uri,
         useUnifiedTopology: true,
       
         
-      }).then(()=> console.log('db is connected')).catch((err)=> console.error('Error'))
+      }).then(()=> console.log('db is connected')).catch()
   
 
   
 exports.mongoose = mongoose;
-exports.Schema = Schema;
-
